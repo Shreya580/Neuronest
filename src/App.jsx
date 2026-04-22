@@ -10,6 +10,7 @@ import Game2Sensory from "./pages/games/Game2Sensory";
 import Game3Motor from "./pages/games/Game3Motor";
 import Questions from "./pages/Questions";
 import Result from "./pages/Result";
+import ParentingGuide from "./pages/ParentingGuide";
 
 function HomePage() {
   return (
@@ -44,6 +45,7 @@ export default function App() {
         <Route path="/game/3" element={<Game3Motor />} />
         <Route path="/questions" element={<Questions />} />
         <Route path="/result" element={<Result />} />
+        <Route path="/guides" element={<ParentingGuide />} />
       </Routes>
     </BrowserRouter>
   );

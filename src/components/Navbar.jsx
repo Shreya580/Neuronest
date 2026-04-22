@@ -18,8 +18,12 @@ export default function Navbar() {
         </button>
 
         <div className="flex items-center gap-2">
+          <button onClick={() => navigate("/guides")}
+            className="px-4 py-2 rounded-full text-slate-600 font-bold text-sm hover:bg-orange-50 hover:text-orange-600 transition">
+            📚 Guides
+          </button>
           <button onClick={() => navigate("/login")}
-            className="px-5 py-2 rounded-full text-slate-600 font-bold text-sm hover:bg-slate-100 transition">
+            className="px-4 py-2 rounded-full text-slate-600 font-bold text-sm hover:bg-slate-100 transition">
             Log In
           </button>
           <button onClick={() => navigate("/game/1")}
