@@ -14,7 +14,8 @@ export default function Signup() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-      navigate("/game");
+      localStorage.setItem("childAge", childAge.replace(/\D/g, "")[0] || "3");
+      navigate("/game/1");
     }, 1200);
   }
 
